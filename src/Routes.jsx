@@ -2,7 +2,8 @@
 import { Route, Routes, Outlet } from "react-router-dom";
 //importamos el header
 import Header from "./modules/components/header.jsx";
-
+//importamo inicio
+import Inicio from "./modules/Inicio/Inicio.jsx";
 //creremos el layout
 function Layout() {
   return (
@@ -13,11 +14,6 @@ function Layout() {
       </main>
     </>
   );
-}
-
-//simulamos la crearecion de inicio
-function Inicio() {
-  return <h1>pagina de inicio</h1>;
 }
 
 //simulamos la crearecion de nosotros
@@ -31,6 +27,7 @@ function AppRoutes() {
       <Route path="/" element={<Layout />}>
         <Route index element={<Inicio />} />
         <Route path="nosotros" element={<Nosotros />} />
+        <Route path="menu" element={<h1>pagina de menu</h1>} />
       </Route>
     </Routes>
   );

@@ -1,5 +1,6 @@
 //crearemos los header que contendra ellogo el nombre de la organizacion y los botones de inicio , nosotros, menu,  galeria , eventos , contactos  y reservar
 //importaremos los componentes de react y react- router-dom
+import { Link } from "react-router-dom";
 
 //import React from "react";
 //crearemos la funcion Header que contendra los elementos del header
@@ -16,15 +17,12 @@ function Header() {
 
         {/* Navigation */}
         <div className="flex items-center space-x-8 text-sm font-medium text-gray-800">
-          <a href="Inicio" className="hover:text-[#1b3b2b] transition-colors">
+          <Link to="/" className="hover:text-[#1b3b2b] transition-colors">
             Inicio
-          </a>
-          <a href="Nosotros" className="hover:text-[#1b3b2b] transition-colors">
-            Nosotros
-          </a>
-          <a href="Menu" className="hover:text-[#1b3b2b] transition-colors">
+          </Link>
+          <Link to="/menu" className="hover:text-[#1b3b2b] transition-colors">
             Menú
-          </a>
+          </Link>
           <a href="Galeria" className="hover:text-[#1b3b2b] transition-colors">
             Galería
           </a>
